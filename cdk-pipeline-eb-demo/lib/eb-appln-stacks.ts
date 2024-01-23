@@ -96,7 +96,7 @@ export class EBApplnStack extends cdk.Stack {
 
     // Create an Elastic Beanstalk environment to run the application
     const elbEnv = new elasticbeanstalk.CfnEnvironment(this, 'Environment', {
-      environmentName: props?.envName ?? "MyWebAppEnvironment",
+      environmentName: props?.envName ?? "MyWebAppEnvironment2",
       applicationName: app.applicationName || appName,
       solutionStackName: '64bit Amazon Linux 2 v5.8.0 running Node.js 18',
       optionSettings: optionSettingProperties,
