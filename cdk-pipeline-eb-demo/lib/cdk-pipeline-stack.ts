@@ -27,7 +27,7 @@ export class CdkPipelineStack extends Stack {
        }),
     });
 
-    // This is where we add the application stages f
+    // This is where we add the application stages fs
   }
 }
 
