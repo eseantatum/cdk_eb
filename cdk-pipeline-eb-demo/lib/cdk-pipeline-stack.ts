@@ -19,9 +19,10 @@ export class CdkPipelineStack extends Stack {
          input: CodePipelineSource.gitHub('eseantatum/cdk_eb', 'master'),
          
          // Install dependencies, build and run cdk synth
-         installCommands: ['npm i -g npm@latest'],
+         //installCommands: ['npm i -g npm@latest'],
          commands: [
-           'docker build -t helloworld . && docker run -p 8080:3000 -it -t helloworld'
+          'cd src', 
+          'docker build -t helloworld . && docker run -p 8080:3000 -it -t helloworld'
          ],
        }),
     });

@@ -1,7 +1,7 @@
 {
   "version": "36.0.0",
   "files": {
-    "4a777fabcde88460c93fc784ebaf200e663357c8a6655e261428a178812eb156": {
+    "ff70b6c5f04eecfcf844c76247a13c8b940d5aab18437b1d26528c7ee684d74f": {
       "source": {
         "path": "CdkPipelineStack.template.json",
         "packaging": "file"
@@ -9,7 +9,7 @@
       "destinations": {
         "295939261429-us-gov-west-1": {
           "bucketName": "cdk-hnb659fds-assets-295939261429-us-gov-west-1",
-          "objectKey": "4a777fabcde88460c93fc784ebaf200e663357c8a6655e261428a178812eb156.json",
+          "objectKey": "ff70b6c5f04eecfcf844c76247a13c8b940d5aab18437b1d26528c7ee684d74f.json",
           "region": "us-gov-west-1",
           "assumeRoleArn": "arn:${AWS::Partition}:iam::295939261429:role/cdk-hnb659fds-file-publishing-role-295939261429-us-gov-west-1"
         }
