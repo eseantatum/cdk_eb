@@ -1,0 +1,13 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+      - #command 1
+
+artifacts:
+  files:
+    - app/**/*
+    - Dockerfile
+    - package.json
+    - README.md
