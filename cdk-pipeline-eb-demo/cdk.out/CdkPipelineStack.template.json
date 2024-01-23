@@ -219,7 +219,7 @@
          "ProjectName": {
           "Ref": "PipelineBuildSynthCdkBuildProject6BEFA8E6"
          },
-         "EnvironmentVariables": "[{\"name\":\"_PROJECT_CONFIG_HASH\",\"type\":\"PLAINTEXT\",\"value\":\"e289873cfb5061930797ed1ba9ee803040addeaefe0894f5b4af286c7c0188f6\"}]"
+         "EnvironmentVariables": "[{\"name\":\"_PROJECT_CONFIG_HASH\",\"type\":\"PLAINTEXT\",\"value\":\"7ddee8597509d34c87708ccbd4454438c8329993dc6fce2c2c216329278b67da\"}]"
         },
         "InputArtifacts": [
          {
@@ -465,7 +465,7 @@
      ]
     },
     "Source": {
-     "BuildSpec": "{\n  \"version\": \"0.2\",\n  \"phases\": {\n    \"install\": {\n      \"commands\": [\n        \"npm i -g npm@latest\"\n      ]\n    },\n    \"build\": {\n      \"commands\": [\n        \"docker build -t helloworld . && docker run -p 8080:3000 -it -t helloworld\"\n      ]\n    }\n  },\n  \"artifacts\": {\n    \"base-directory\": \"cdk.out\",\n    \"files\": \"**/*\"\n  }\n}",
+     "BuildSpec": "{\n  \"version\": \"0.2\",\n  \"phases\": {},\n  \"artifacts\": {\n    \"base-directory\": \"cdk.out\",\n    \"files\": \"**/*\"\n  }\n}",
      "Type": "CODEPIPELINE"
     }
    },

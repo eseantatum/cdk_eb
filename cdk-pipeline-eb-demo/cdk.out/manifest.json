@@ -18,7 +18,7 @@
         "validateOnSynth": false,
         "assumeRoleArn": "arn:${AWS::Partition}:iam::295939261429:role/cdk-hnb659fds-deploy-role-295939261429-us-gov-west-1",
         "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::295939261429:role/cdk-hnb659fds-cfn-exec-role-295939261429-us-gov-west-1",
-        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-295939261429-us-gov-west-1/ff70b6c5f04eecfcf844c76247a13c8b940d5aab18437b1d26528c7ee684d74f.json",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-295939261429-us-gov-west-1/1f04e0378bb657c86d8619571cb3ab337011e1195229547e3b7bcb3ca4179fbb.json",
         "requiresBootstrapStackVersion": 6,
         "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
         "additionalDependencies": [
