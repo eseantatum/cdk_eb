@@ -268,10 +268,10 @@
                             "name": "Source",
                             "actions": [
                               {
-                                "name": "OWNER_REPO",
+                                "name": "eseantatum_cdk_eb",
                                 "outputArtifacts": [
                                   {
-                                    "name": "OWNER_REPO_Source"
+                                    "name": "eseantatum_cdk_eb_Source"
                                   }
                                 ],
                                 "actionTypeId": {
@@ -281,9 +281,9 @@
                                   "provider": "GitHub"
                                 },
                                 "configuration": {
-                                  "Owner": "OWNER",
-                                  "Repo": "REPO",
-                                  "Branch": "main",
+                                  "Owner": "eseantatum",
+                                  "Repo": "cdk_eb",
+                                  "Branch": "master",
                                   "OAuthToken": "{{resolve:secretsmanager:github-token:SecretString:::}}",
                                   "PollForSourceChanges": false
                                 },
@@ -298,7 +298,7 @@
                                 "name": "Synth",
                                 "inputArtifacts": [
                                   {
-                                    "name": "OWNER_REPO_Source"
+                                    "name": "eseantatum_cdk_eb_Source"
                                   }
                                 ],
                                 "outputArtifacts": [
@@ -372,13 +372,13 @@
                     "id": "Source",
                     "path": "CdkPipelineStack/Pipeline/Pipeline/Source",
                     "children": {
-                      "OWNER_REPO": {
-                        "id": "OWNER_REPO",
-                        "path": "CdkPipelineStack/Pipeline/Pipeline/Source/OWNER_REPO",
+                      "eseantatum_cdk_eb": {
+                        "id": "eseantatum_cdk_eb",
+                        "path": "CdkPipelineStack/Pipeline/Pipeline/Source/eseantatum_cdk_eb",
                         "children": {
                           "WebhookResource": {
                             "id": "WebhookResource",
-                            "path": "CdkPipelineStack/Pipeline/Pipeline/Source/OWNER_REPO/WebhookResource",
+                            "path": "CdkPipelineStack/Pipeline/Pipeline/Source/eseantatum_cdk_eb/WebhookResource",
                             "attributes": {
                               "aws:cdk:cloudformation:type": "AWS::CodePipeline::Webhook",
                               "aws:cdk:cloudformation:props": {
@@ -393,7 +393,7 @@
                                   }
                                 ],
                                 "registerWithThirdParty": true,
-                                "targetAction": "OWNER_REPO",
+                                "targetAction": "eseantatum_cdk_eb",
                                 "targetPipeline": {
                                   "Ref": "Pipeline9850B417"
                                 },

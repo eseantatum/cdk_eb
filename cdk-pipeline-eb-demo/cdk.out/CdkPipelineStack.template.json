@@ -189,16 +189,16 @@
          "Version": "1"
         },
         "Configuration": {
-         "Owner": "OWNER",
-         "Repo": "REPO",
-         "Branch": "main",
+         "Owner": "eseantatum",
+         "Repo": "cdk_eb",
+         "Branch": "master",
          "OAuthToken": "{{resolve:secretsmanager:github-token:SecretString:::}}",
          "PollForSourceChanges": false
         },
-        "Name": "OWNER_REPO",
+        "Name": "eseantatum_cdk_eb",
         "OutputArtifacts": [
          {
-          "Name": "OWNER_REPO_Source"
+          "Name": "eseantatum_cdk_eb_Source"
          }
         ],
         "RunOrder": 1
@@ -223,7 +223,7 @@
         },
         "InputArtifacts": [
          {
-          "Name": "OWNER_REPO_Source"
+          "Name": "eseantatum_cdk_eb_Source"
          }
         ],
         "Name": "Synth",
@@ -285,7 +285,7 @@
     "aws:cdk:path": "CdkPipelineStack/Pipeline/Pipeline/Resource"
    }
   },
-  "PipelineSourceOWNERREPOWebhookResource45DC7410": {
+  "PipelineSourceeseantatumcdkebWebhookResource2F033636": {
    "Type": "AWS::CodePipeline::Webhook",
    "Properties": {
     "Authentication": "GITHUB_HMAC",
@@ -299,14 +299,14 @@
      }
     ],
     "RegisterWithThirdParty": true,
-    "TargetAction": "OWNER_REPO",
+    "TargetAction": "eseantatum_cdk_eb",
     "TargetPipeline": {
      "Ref": "Pipeline9850B417"
     },
     "TargetPipelineVersion": 1
    },
    "Metadata": {
-    "aws:cdk:path": "CdkPipelineStack/Pipeline/Pipeline/Source/OWNER_REPO/WebhookResource"
+    "aws:cdk:path": "CdkPipelineStack/Pipeline/Pipeline/Source/eseantatum_cdk_eb/WebhookResource"
    }
   },
   "PipelineBuildSynthCdkBuildProjectRole231EEA2A": {
